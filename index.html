@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Exam2 Joshua Headley</title>
+    <link rel="stylesheet"type="text/css" href="styles/exam2problem.css" />
+    <script src="js/exam2problem.js"></script>
+</head>
+
+<body>
+        <select onchange="MenuInput()" id="menu">
+            <option></option>
+            <option>Retrieve Categories</option>
+            <option>Add Category</option>
+            <option>Change Description</option>
+            <option>Delete Category</option>
+            <option>About Me</option>
+        </select>
+    <hr>
+<br>
+<section id="CategoryList" class="LIST">
+        <label>Retrieve Categories</label>
+        <br>
+        <button onclick="GetCategories()" id="CatList">Retrieve list</button>
+        <br>
+        <label id="result_11">The operation's result will display here.</label>
+</section>
+<br>
+<section id="AddCategory" class="ADD">
+        <label>Enter a Category Name: </label>
+        <input type="text" id="catname">
+        <br>
+        <label>Pleaes enter a description: </label>
+        <input type="text" id="catdescription">
+        <br>
+        <button onclick="CreateCategory()" id="newcat">Add a new category</button>
+        <br>
+        <label id="result_22">The operation's result will display here.</label>
+</section>
+<br>
+<section id="ChangeDescription" class="CHANGE">
+    <label>Enter a Category ID: </label>
+    <input type="text" id="ID">
+    <br>
+    <label>Enter a new description </label>
+    <input type="text" id="newCat">
+    <br>
+    <button onclick="changeDescription()" id="ChangeD">Update a Description</button>
+    <br>
+    <label id="result_33">The operation's result will display here.</label>
+</section>
+<br>
+<section id="DeleteCategory" class="DELETE">
+    <label>Enter a Category ID: </label>
+    <input type="text" id="removeid">
+    <br>
+    <button onclick="window.confirm('Confirm deletion'); deleteCategory() " id="Removecat">Delete a category</button>
+    <br>
+    <label id="result_44">The operation's result will display here.</label>
+</section>
+
+<section id="About" class="ABOUT">
+    <label>Joshua Headley</label>
+    <br>
+    <label>Email: joshh92@uab.edu</label>
+    <label>Major: Business Information Sciences and Quantitive Mechanics</label>
+</section>
+
+</body>
+</html>
